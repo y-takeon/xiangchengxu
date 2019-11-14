@@ -1,0 +1,15 @@
+/* components/movie-list/movie-list.wxss */
+.list-wrapper .img-list{
+  width: 135rpx;
+  height: 189rpx;
+}
+.list-wrapper text{
+  display: inline-block;
+  max-width: 135rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 24rpx;
+  font-weight: 200;
+  color: rgb(7, 17, 27);
+  line-height: 48rpx;
+}

@@ -1,0 +1,13 @@
+<view class="welcome-wrapper">
+  <image src="/images/avatar/1.png"></image>
+  <view class="content">
+    <text>{{username}}</text>
+  </view>
+
+  <view class="starbtn">
+    <navigator url="/pages/post/post" open-type="switchTab">
+      <text>{{moto}}</text>
+    </navigator>
+  </view>
+
+</view>

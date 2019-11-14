@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "movie-component":"/components/movie-component/movie-component",
+    "search-component":"/components/search-component/search-component"
+  }
+}

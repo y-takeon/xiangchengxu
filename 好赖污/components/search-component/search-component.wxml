@@ -1,0 +1,5 @@
+<!--components/search-component/search-component.wxml-->
+<view class="search-wrapper">
+<icon type="search" size="20" color="#f7f7f7"></icon>
+<input type="text" placeholder="请输入关键词搜索" bindconfirm="onBindConfirm"></input>
+</view>

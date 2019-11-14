@@ -1,0 +1,15 @@
+<!--components/movie-component/movie-component.wxml-->
+<view class="movie-wrapper">
+  <view class="content">
+    <text class="title">{{movieText}}</text>
+  <navigator open-type="navigate" url="/pages/movie/detailmovie/detailmovie?movieText={{movieText}}">
+    <view class="more">
+      <text>更多</text>
+      <image src="/images/icon/arrow-right.png"></image>
+    </view>
+    </navigator>
+  </view>
+  <view class="list-content">
+    <movie-list wx:for="{{movieList}}" wx:key="key" movie='{{item}}'></movie-list>
+  </view>
+</view>

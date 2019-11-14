@@ -1,0 +1,33 @@
+<!--pages/post/post.wxml-->
+<view class="post-wrapper">
+  <swiper class="swiper-wrapper" indicator-dots="true" indicator-color="#fefefe" indicator-active-color="#ff0000" autoplay="true" interval="2000" duration="1000">
+    <swiper-item>
+      <image src="/images/iqiyi.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/vr.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/wx.png"></image>
+    </swiper-item>
+  </swiper>
+  <view class="content-list">
+    <view class="content-item" wx:for="{{postList}}" wx:key="key" wx:index="index">
+      <navigator open-type="navigate" url="detail/detail?id={{index}}">
+      <view class="userinfo">
+        <image src="{{item.avatar}}"></image>
+        <text>{{item.date}}</text>
+      </view>
+      <view class="title">{{item.title}}</view>
+      <image src="{{item.imgSrc}}" class="postimg"></image>
+      <view class="content">{{item.content}}</view>
+      <view class="rating">
+      <image src="/images/icon/chat.png" class="star"></image>
+      <text class="startext">{{item.rating}}</text>
+      <image src="/images/icon/view.png" class="see"></image>
+      <text class="seetext">{{item.collection}}</text>
+      </view>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+/* pages/movie/detailmovie/detailmovie.wxss */
+.all-movie{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20rpx;
+}
+.all-movie .movieList{
+  flex: 1;
+  margin-right: 20rpx;
+  text-align: center;
+}
+.all-movie .movieList:last-child{
+  text-align: left;
+}

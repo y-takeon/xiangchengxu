@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/welcome/welcome",
+    "pages/post/post",
+    "pages/post/detail/detail",
+    
+    "pages/movie/detailmovie/detailmovie",
+    "pages/movie/xiangqing/xiangqing"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#1685a9",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "金秋十月"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#1685a9",
+    "list": [
+      {
+        "pagePath": "pages/post/post",
+        "text": "阅读",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ]
+}

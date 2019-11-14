@@ -1,0 +1,4 @@
+<!--pages/movie/detailmovie/detailmovie.wxml-->
+<view class="all-movie">
+ <movie-list wx:for="{{currentMovieList}}" wx:key="key" movie="{{item}}" class="movieList"></movie-list>
+</view>

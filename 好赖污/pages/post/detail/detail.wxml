@@ -1,0 +1,26 @@
+<!--pages/post/detail/detail.wxml-->
+<view class="detail-wrapper">
+  <image class="header-img" src="{{detailObj.headImgSrc}}"></image>
+  <!--音乐的播放
+     bindtap 是允许事件冒泡
+     catchtap  可以阻止事件冒泡
+  -->
+  <image wx:if="{{isPlay}}" src="/images/music/music-stop.png" class="music-image" catchtap="playMusic"></image>
+  <image wx:else src="/images/music/music-start.png" class="music-image" catchtap="playMusic"></image>
+  <view class="item-detail">
+    <view class="author">
+      <image src="{{detailObj.avatar}}"></image>
+      <text class="name">{{detailObj.author}}</text>
+      <text class="time">发表于{{detailObj.dateTime}}</text>
+    </view>
+    <view class="title">{{detailObj.title}}</view>
+    <view class="tool">
+      <view class="icon">
+        <image src="{{isCollect?'/images/icon/collection.png':'/images/icon/collection-anti.png'}}" catchtap="doCollect"></image>
+        <image src="/images/icon/share-anti.png" catchtap="doShare"></image>
+      </view>
+      <view class="hiro"></view>
+    </view>
+    <view class="content">{{detailObj.detail}}</view>
+  </view>
+</view>

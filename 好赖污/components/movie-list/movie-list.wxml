@@ -1,0 +1,10 @@
+<!--components/movie-list/movie-list.wxml-->
+<view class="list-wrapper">
+  <navigator open-type="navigateTo" url="/pages/movie/xiangqing/xiangqing?movieid={{movie.id}}">
+    <image src="{{movie.images.small}}" class="img-list"></image>
+    <view>
+      <text>{{movie.title}}</text>
+    </view>
+  </navigator>
+  <star score="{{movie.rating.average}}"></star>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/movie/movie.wxml-->
+<search-component bind:myevent="onMyevent"></search-component>
+<movie-component movieList="{{courentMovieList}}" movieText="正在热映"></movie-component>
+<movie-component movieList="{{soonMovieList}}" movieText="即将上映"></movie-component>
+<movie-component movieList="{{newMovieList}}" movieText="电影新片"></movie-component>

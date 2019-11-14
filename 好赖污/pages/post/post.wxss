@@ -1,0 +1,67 @@
+/* pages/post/post.wxss */
+.post-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.swiper-wrapper{
+  width: 100%;
+  height: 547rpx;
+}
+.swiper-wrapper image{
+  width: 100%;
+  height: 100%;
+}
+.content-item{
+  margin: 40rpx 0;
+  border-bottom: 1px solid rgba(7,17,27,0.1)
+}
+.content-item .userinfo{
+  margin: 0 20rpx 20rpx 20rpx;
+}
+.userinfo image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.userinfo text{
+  display: inline-block;
+  margin-left: 40rpx;
+  margin-top: 16rpx;
+  font-size: 28rpx;
+  color: rgb(7,17,27);
+  vertical-align:top;
+  font-weight: 200;
+}
+.content-item .title{
+  font-size: 32rpx;
+  line-height: 32rpx;
+  font-weight: 700;
+  margin: 20rpx;
+}
+.content-item .postimg{
+  width: 100%;
+  height: 400rpx;
+}
+.content-item .content{
+  margin: 20rpx;
+  font-size: 28rpx;
+  color: rgb(7,17,27);
+  font-weight: 200;
+  line-height: 1.5em;
+}
+.rating{
+  margin: 20rpx;
+}
+.rating .star,.rating .see{
+  height: 28rpx;
+  width: 28rpx;
+}
+.rating image{
+  margin-left:10rpx; 
+}
+.rating text{
+  display: inline-block;
+  font-size: 24rpx;
+  color: rgb(7,17,27);
+  margin-left: 10rpx;
+}
+

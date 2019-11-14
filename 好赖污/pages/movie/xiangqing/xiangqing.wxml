@@ -1,0 +1,55 @@
+<!--pages/movie/xiangqing/xiangqing.wxml-->
+<!--pages/movie/detailmovie/detailmovie.wxml-->
+<view class="detail-wrapper">
+  <view class="detail-header">
+    <view class="title">{{currentMovie.title}}</view>
+    <view class="support">{{currentMovie.countries}}</view>
+    <view class="support">{{currentMovie.pubdates}}</view>
+    <view class="support">{{currentMovie.languages}}</view>
+    <view style="background-image:url({{currentMovie.images.small}})" class="background"></view>
+  </view>
+  <view class="detail-content">
+    <view class="title">{{currentMovie.title}}</view>
+    <view class="score-wrapper">
+      <text class="text-wrapper">评分</text>
+      <star score="{{currentMovie.rating.average}}" class="star"></star>
+    </view>
+    <view class="daoyan">
+      <text class="text-wrapper">导演</text>
+      <text class="people wrapper" wx:for="{{currentMovie.directors}}" wx:key="key">{{item.name}}</text>
+    </view>
+    <view class="cp-wrapper">
+      <text class="text-wrapper">演员</text>
+      <text class="cp wrapper" wx:for="{{currentMovie.casts}}" wx:key="key">{{item.name}}</text>
+    </view>
+    <view class="type-wrapper">
+      <text class="text-wrapper">类型</text>
+      <text class="type-desc wrapper" wx:for="{{currentMovie.genres}}" wx:key="key">{{item}}</text>
+    </view>
+    <view class="img-wrapper">
+      <image src="{{currentMovie.images.small}}"></image>
+    </view>
+  </view>
+  <view class="desc-wrapper">
+    <view class="title">
+      剧情简介
+    </view>
+    <view class="desc">
+     {{currentMovie.summary}}
+    </view>
+  </view>
+  <view class="couple-wrapper">
+    <view class="title">演员
+      <text class="total">(全部{{currentMovie.casts.length}})</text>
+    </view>
+    <view class="couple-list">
+      <view class="couple-item" wx:for="{{currentMovie.casts}}" wx:key="key">
+        {{key}}
+
+        <image src="{{item.avatars.small}}" class="pic"></image>
+        <text class="name">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  
+</view>
